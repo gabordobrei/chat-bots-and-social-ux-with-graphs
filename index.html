@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat bots and (social) user experience with graphs</title>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <style>
+      body { font-family: 'Ubuntu', sans-serif; font-weight: 600; }
+      a { text-decoration: none; color: #4ac084; }
+      .remark-container { background-color: #2B629C; }
+      .remark-slide-scaler { box-shadow: none; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 0.5em; text-align: left; }
+      .remark-slide-content { font-size: 3em; padding: 1em; background-color: #2B629C; color: #fff; }
+      .remark-slide-content h1 { font-size: 2em; }
+      .remark-notes p { font-size: 0.9em; }
+      .remark-slide-content img { max-width: 80%; }
+      .remark-slide-number { font-size: 0.5em; }
+      .small-image img { width: 40%; }
+      .topic { opacity: 0.5; position: absolute; width: 100%; top: 0.2em; left: 0 }
+      ul, li { text-align: left; }
+      .red { color: red; }
+      .green { color: #4ac084; }
+      .yellow { color: #d9e506; }
+      .blue { color: #0f5788; }
+      .big { font-size: 2em; }
+      .small { font-size: 0.75em; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle
+
+
+---
+#Chat bots and (social) UX with graphs
+???
+welcome
+
+
+---
+##Growing your tech stack: when to say yes?
+???
+Msg: 'fejlesztokent mikor kell igent mondani egy uj technologiara'
+
+
+---
+#Gábor Döbrei
+##[@gabor_dobrei](https://twitter.com/gabor_dobrei)
+###[Node.js](https://hu.linkedin.com/in/gábor-döbrei-230a4368) and graph enthusiast · Husband · co-organizer of [@neo4jbp](https://www.meetup.com/neo4j-budapest-users/)
+???
+intro
+
+
+---
+#Chat bots
+
+Stateless bots
+
+Semi-stateful bots
+
+Stateful bots
+
+Loyal bots
+---
+#Chat bots
+
+.green[Stateless bots]
+
+Semi-stateful bots
+
+Stateful bots
+
+Loyal bots
+???
+stateless: egyszeru portja egy meglevo app-nek
+---
+#Chat bots
+
+Stateless bots
+
+.green[Semi-stateful bots]
+
+Stateful bots
+
+Loyal bots
+???
+semi-stateful: onboarding (1-5 msg) v.ö. telefonos menu
+---
+#Chat bots
+
+Stateless bots
+
+Semi-stateful bots
+
+.green[Stateful bots]
+
+Loyal bots
+???
+statful: history? 3., 5. 10. msg-re kulon (extra) valaszok
+---
+#Chat bots
+
+Stateless bots
+
+Semi-stateful bots
+
+Stateful bots
+
+.green[Loyal bots]
+???
+loyal: reakcio/uzenet kuldese incoming nelkul -> history/interakciok elemzese
+
+---
+#We wanted a loyal bot
+???
+* onboarding
+* sima text / slashtag
+* heti ismetlodessel nap/napszak alapu uzenetek (TGIF / hate monday)
+
+
+---
+#Even more loyal, social?
+
+Subscribe
+
+Follow
+
+Notification
+???
+/slashtag, user
+
+MARKETING, targeting
+
+future use-case:
+* egymast kovetni
+* tartalmat kovetni
+
+
+---
+#Kik· .small[Interactive Inc.]
+###2009, $120.5M funding, 300M user
+###(mostly North American teenagers)
+???
+kik chat app - szoros kapcsolatban veluk
+
+Tavaly oktober
+
+
+---
+#Kik·
+###inline, product, ux
+???
+* szoros kapcsolat
+* FB bot shop?!?!?
+
+response-time
+
+
+---
+#Growing Your Tech Stack
+???
+OK, lattuk a lehetoseget es a business value-t
+
+Fejlesztokent mit szoltunk ehhez?
+---
+#Growing Your Tech Stack
+
+.green["A good programmer is someone who looks both ways before crossing a one-way street"]
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+Deployment Infrastructure
+
+Programming Language
+
+Database
+???
+kulonbozo rizikot vallalunk
+---
+#Growing Your Tech Stack
+
+.green[Local Developer Utilities]
+
+Deployment Infrastructure
+
+Programming Language
+
+Database
+???
+vi / atom / webstorm
+
+* Pro: Others on the team learn a tool they didn’t know, and the productivity of the whole team goes up.
+* Con: It’s tough to switch environments, therefore harder to pair.
+* Inevitable cost: Just the set up.
+* Incentives: Developers feel empowered to automate.
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+.green[Deployment Infrastructure]
+
+Programming Language
+
+Database
+???
+automate everything, de mi van, ha elromlik vmi :(
+
+* Pro: Change becomes less risky and less painful.
+* Con: Something breaks, production deploys are blocked.
+* Inevitable cost: Ongoing ownership and maintenance
+* Incentives: Developers are empowered to improve the whole department.
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+Deployment Infrastructure
+
+.green[Programming Language]
+
+Database
+???
+microservice: true way of internet
+
+elmult 3-4 het:
+
+0. sirnak, mert nem tetszik nekik az a nyelv, amiben most dolgoznak, vagy amiben eppen *nem* dolgoznak
+1. php: json.stringify
+2. nodejs: stream
+---
+"When your hammer is Nodejs stream, everything begins to look like a thumb."
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+Deployment Infrastructure
+
+.green[Programming Language]
+
+Database
+???
+* Pro: Access to new capabilities and a new community of developers, with new ideas.
+* Con: Code in production that no one understands.
+* Inevitable cost: Deployment automation, learning an entire system of tools and libraries.
+* Incentives: Retain and attract eager learners.
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+Deployment Infrastructure
+
+Programming Language
+
+.green[Database]
+???
+* Pro: Questions that were impossible to answer become easy.
+* Con: Data is lost or inaccessible, business stops.
+* Inevitable cost: Learning every configuration option, quirks of querying, automating migrations and backups and restores.
+* Incentives: Thinking carefully about storage tradeoffs for each business situation.
+---
+#Growing Your Tech Stack
+
+Local Developer Utilities
+
+Deployment Infrastructure
+
+Programming Language
+
+.green[Database]
+???
+Lattuk, h a chat botok a true way
+
+Lattuk, h fejlesztokent nem konnyu dontes elott allunk, h egy uj dolgot kell tervezni, ami "SOCIAL"
+
+MIRE kell figyelni? - 2 dolgot emelnek ki
+
+
+---
+#"Social data"
+
+Document
+
+Relational
+
+Graph
+???
+Amig csak azt akarjuk tarolni, h *userek kategoriakat kovetnek*, addig csak egy _kapcsolotablara_ van szukseg.
+
+Vagy nested objectekre.
+
+Vagy graf elekre.
+
+#ajanlo rendszer?!
+
+
+---
+#Scalability
+"Scalability is a concern for later"
+???
+Ha arra szamitunk, h nem fogjak hasznalni, akkor tok mindegy ;)
+
+330k user, van olyan, aki 55 kategoriat kovet...
+
+250 kategoria, 17386-an kovetik a /markiplier
+
+az elso nap 23653 kovetes tortent - sok? 7%-a a usereknek
+
+
+---
+#When to say yes to grow your tech stack?
+
+Real business value
+
+Moderate risk
+
+There's no other way
+???
+Szoval mikor mondjunk igent, pl a _graf_ adatbazisokra?
+
+ha _tenyleges_ uzleti erteket teremtunk
+
+ha tudjuk csokkenteni az amugy magas kockazatot
+
+ha nincs mas megoldas
+---
+#When to say yes to grow your tech stack?
+
+.green[Real business value]
+
+Moderate risk
+
+There's no other way
+???
+ha _tenyleges_ uzleti erteket teremtunk
+
+vizio, szukseges feature-ok
+---
+#When to say yes to grow your tech stack?
+
+Real business value
+
+.green[Moderate risk]
+
+There's no other way
+???
+ha tudjuk csokkenteni az amugy magas kockazatot
+
+(pilot, flipper, dark launch)
+
+nem baj a data loss - parhuzamosan mashova is menteni
+
+nem kell migralni - _microservice_
+
+nem kell uzemeltetni - felho
+
+nem kell tanulni - segitunk!
+
+nem muszaj optimalizalni a query-ket (botos response time: human-like)
+---
+#When to say yes to grow your tech stack?
+
+Real business value
+
+Moderate risk
+
+.green[There's no other way]
+???
+ha nincs mas megoldas
+
+_real_ social data => graf
+
+pl real-time ajanlo rendszer
+
+
+
+---
+Questions?
+
+Comments?
+
+
+---
+[[1] Four Types Of Bots](https://chatbotsmagazine.com/four-types-of-bots-432501e79a2f#.dyu5m2ta6)
+
+[[2] Growing Your Tech Stack: When to Say No](https://blog.codeship.com/growing-tech-stack-say-no/)
+
+[[3] Why You Should Never Use MongoDB](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
+
+[[4] How I built an app with 500,000 users in 5 days on a $100 server](https://medium.com/unboxd/how-i-built-an-app-with-500-000-users-in-5-days-on-a-100-server-77deeb238e83#.ua5xv1j6n)
+
+    </textarea>
+    <script src="./remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({ratio: '16:9'});
+    </script>
+  </body>
+</html>
