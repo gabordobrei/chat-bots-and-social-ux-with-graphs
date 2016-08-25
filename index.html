@@ -12,17 +12,11 @@
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 0.5em; text-align: left; }
       .remark-slide-content { font-size: 3em; padding: 1em; background-color: #2B629C; color: #fff; }
       .remark-slide-content h1 { font-size: 2em; }
-      .remark-notes p { font-size: 0.9em; }
       .remark-slide-content img { max-width: 80%; }
+      .remark-notes p { font-size: 0.9em; }
       .remark-slide-number { font-size: 0.5em; }
-      .small-image img { width: 40%; }
-      .topic { opacity: 0.5; position: absolute; width: 100%; top: 0.2em; left: 0 }
       ul, li { text-align: left; }
-      .red { color: red; }
       .green { color: #4ac084; }
-      .yellow { color: #d9e506; }
-      .blue { color: #0f5788; }
-      .big { font-size: 2em; }
       .small { font-size: 0.75em; }
     </style>
   </head>
@@ -31,6 +25,21 @@
 name: inverse
 layout: true
 class: center, middle
+
+---
+#1.
+#Neo4j swag
+---
+#2.
+![](crunch.png)
+---
+#2.
+![](michael.png)
+---
+#3.
+[https://twitter.com/neo4jbp](https://twitter.com/neo4jbp)
+
+[https://neo4jbp.slack.com](https://neo4jbp-slack.herokuapp.com/)
 
 
 ---
@@ -51,6 +60,61 @@ Msg: 'fejlesztokent mikor kell igent mondani egy uj technologiara'
 ###[Node.js](https://hu.linkedin.com/in/gábor-döbrei-230a4368) and [graph enthusiast](https://github.com/gabordobrei/) · Husband · co-organizer of [@neo4jbp](https://www.meetup.com/neo4j-budapest-users/)
 ???
 intro
+
+
+---
+- Business value
+  - Chat bots
+  - Kik·
+
+- Technical side
+  - New technology in the stack
+  - Challenges
+
+
+---
+#Startup story
+
+Autumn of 2015
+
+Every platform is target
+
+Port/translate the main functionalities
+
+New (platform specific) features
+???
+Kik vagyunk? Mashup, kommunikacio, reakcio amcsi tiniknek, 0. koros befektetes
+
+#Hogy lesz ebbol penz?
+##celzott marketing
+
+Minden lehetoseg erdekel
+
+Van egy kesz(?) termek
+
+Merre lehetne tovabb menni (tech / content startupkent)
+
+
+---
+#Kik· .small[Interactive Inc.]
+
+---
+#Kik· .small[Interactive Inc.]
+###2009, $120.5M funding, 300M user
+<!-- ###(mostly North American teenagers) -->
+???
+kik chat app - szoros kapcsolatban veluk
+
+chat platform => botok, FB-ok megelozni!!
+
+
+---
+#Kik· .small[Interactive Inc.]
+###inline, product, ux
+???
+###szoros kapcsolat: product, ux, SOKAT tanultunk: response-time
+
+##inline
 
 
 ---
@@ -133,29 +197,11 @@ Notification
 
 MARKETING, targeting
 
+##subs vs. follow (ez _lehet_ kolcsonos)
+
 future use-case:
 * egymast kovetni
 * tartalmat kovetni
-
-
----
-#Kik· .small[Interactive Inc.]
-###2009, $120.5M funding, 300M user
-###(mostly North American teenagers)
-???
-kik chat app - szoros kapcsolatban veluk
-
-Tavaly oktober
-
-
----
-#Kik·
-###inline, product, ux
-???
-* szoros kapcsolat
-* FB bot shop?!?!?
-
-response-time
 
 
 ---
@@ -293,6 +339,14 @@ Relational
 
 Graph
 ???
+Hol talalkoztal grafokkal a mindennapjaid soran?
+* mindenhol+everywhere: 27, mindenhol (is): 1
+* social, szocial, facebook, linkedin: 19
+
+====
+
+kozel 50 ember!!
+
 Amig csak azt akarjuk tarolni, h *userek kategoriakat kovetnek*, addig csak egy _kapcsolotablara_ van szukseg.
 
 Vagy nested objectekre.
@@ -305,8 +359,10 @@ Vagy graf elekre.
 ---
 #Scalability
 "Scalability is a concern for later"
+
+"MVP is a product with .green[just enough] features to gather validated learning about the product and its continued development"
 ???
-Ha arra szamitunk, h nem fogjak hasznalni, akkor tok mindegy ;)
+Ha arra szamitunk, h nem fogjak hasznalni, akkor tok mindegy ;). Nincs olyan, hogy MVP!!
 
 330k user, van olyan, aki 55 kategoriat kovet...
 
@@ -387,6 +443,8 @@ Questions?
 
 Comments?
 
+.small[[https://dobrei.com/chat-bots-and-social-ux-with-graphs](https://dobrei.com/chat-bots-and-social-ux-with-graphs)]
+
 
 ---
 [[1] Four Types Of Bots](https://chatbotsmagazine.com/four-types-of-bots-432501e79a2f#.dyu5m2ta6)
@@ -396,6 +454,8 @@ Comments?
 [[3] Why You Should Never Use MongoDB](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
 
 [[4] How I built an app with 500,000 users in 5 days on a $100 server](https://medium.com/unboxd/how-i-built-an-app-with-500-000-users-in-5-days-on-a-100-server-77deeb238e83#.ua5xv1j6n)
+
+[[5] Minimum Viable Product: a guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)
 
     </textarea>
     <script src="./remark-latest.min.js">
